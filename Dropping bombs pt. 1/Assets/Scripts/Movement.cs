@@ -7,6 +7,12 @@ public class Movement : MonoBehaviour
     [Tooltip("Speed of movement")]
     public float speed;
     
+    private GameManager _gameManager;
+    private void Awake()
+    {
+        _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
+    
     // Fixed Update is a frame-rate independent method called at fixed intervals
     // to allow for consistent physics calculations
     private void FixedUpdate()
@@ -19,7 +25,8 @@ public class Movement : MonoBehaviour
         Vector3 movement = new(horizontal, vertical);
 
         // Applies this vector to the object
-        transform.position += movement * (Time.deltaTime * speed);
+        if (_gameManager.Playing)
+            transform.position += movement * (Time.deltaTime * speed);
     }
 
 }
