@@ -187,6 +187,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: b30bac141acc75148a2ad7aaff266d5f, type: 3}
+--- !u!198 &395728322 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8399942033283013002, guid: b30bac141acc75148a2ad7aaff266d5f, type: 3}
+  m_PrefabInstance: {fileID: 223699433}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +329,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 6
   changeLaneSpeed: 6
+--- !u!114 &913118768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913118761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf1af8dc529602d4aafc224541c5a294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poof: {fileID: 395728322}
+--- !u!114 &913118769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913118761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c9d87adbf70dca408e147421a38aea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

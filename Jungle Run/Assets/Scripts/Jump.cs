@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
+    public bool GetIsGrounded()
+    {
+        return _isGrounded;
+    }
     public float jumpForce = 4.5f;
     public float fallMultiplier = 2.5f;
     public float groundDistanceThreshold = 0.005f;
