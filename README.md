@@ -1,0 +1,3 @@
+# lucas-peel
+my github repo for code ninjas i am bored unity is loading.........
+USE A GITIGNORE!
