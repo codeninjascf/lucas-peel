@@ -16,9 +16,15 @@ public class Animate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_jump.GetIsGrounded())
+        if (_jump.GetIsGrounded())
         {
-
+            _animator.SetBool("isRunning", true);
+            _animator.SetBool("isJumping", false);
+        }
+        else
+        {
+            _animator.SetBool("isRunning", false);
+            _animator.SetBool("isJumping", true);
         }
     }
 }

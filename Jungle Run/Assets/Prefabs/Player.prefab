@@ -35,8 +35,8 @@ Transform:
 --- !u!1 &254864795655928960
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6964870577853740556, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -53,8 +53,8 @@ GameObject:
 --- !u!4 &2051341080659025487
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 9175685211873121475, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254864795655928960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -68,8 +68,8 @@ Transform:
 --- !u!198 &7037126603689894677
 ParticleSystem:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 182857104883411353, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254864795655928960}
   serializedVersion: 8
@@ -525,6 +525,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
+    gravitySource: 0
     maxNumParticles: 12
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -3943,6 +3944,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minVertexDistance: 0.2
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
@@ -4702,8 +4704,8 @@ ParticleSystem:
 ParticleSystemRenderer:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6740072934552181730, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254864795655928960}
   m_Enabled: 1
@@ -4814,6 +4816,8 @@ GameObject:
   - component: {fileID: 6654732486920064506}
   - component: {fileID: 8622965017823399156}
   - component: {fileID: 8622965017823399159}
+  - component: {fileID: 2438791193685597003}
+  - component: {fileID: 2395982285434139821}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -4836,8 +4840,8 @@ Transform:
   - {fileID: 4989822622701972817}
   - {fileID: 5634013346081278325}
   - {fileID: 3831027123569050118}
-  - {fileID: 765961425599561044}
   - {fileID: 2402401417312188702}
+  - {fileID: 765961425599561044}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4890,6 +4894,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6, y: 4.1, z: 1.5}
   m_Center: {x: 0, y: 2.03, z: 0}
+--- !u!114 &2438791193685597003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327357498281235091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7c6d400b4b2d0447a0db91bbdbd036d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2395982285434139821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327357498281235091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf1af8dc529602d4aafc224541c5a294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poof: {fileID: 8399942033283013002}
 --- !u!1 &338534333658965750
 GameObject:
   m_ObjectHideFlags: 0
@@ -4957,8 +4986,8 @@ Transform:
 --- !u!1 &536590065748391999
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7229156047342531251, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -4975,8 +5004,8 @@ GameObject:
 --- !u!4 &7010690423183609553
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 174443044170351709, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536590065748391999}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -4990,8 +5019,8 @@ Transform:
 --- !u!198 &2719872671357572864
 ParticleSystem:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5088974143187574156, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536590065748391999}
   serializedVersion: 8
@@ -5447,6 +5476,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
+    gravitySource: 0
     maxNumParticles: 12
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -8865,6 +8895,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minVertexDistance: 0.2
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
@@ -9624,8 +9655,8 @@ ParticleSystem:
 ParticleSystemRenderer:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8042553684330580471, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536590065748391999}
   m_Enabled: 1
@@ -9823,8 +9854,8 @@ Transform:
 --- !u!1 &1479397106699666234
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8621746870974892470, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -9841,8 +9872,8 @@ GameObject:
 --- !u!4 &3908095583946197631
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6133092316777971955, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479397106699666234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -9856,8 +9887,8 @@ Transform:
 --- !u!198 &8048430032608133223
 ParticleSystem:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 905367239344638699, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479397106699666234}
   serializedVersion: 8
@@ -10349,6 +10380,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
+    gravitySource: 0
     maxNumParticles: 12
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -13767,6 +13799,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minVertexDistance: 0.2
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
@@ -14526,8 +14559,8 @@ ParticleSystem:
 ParticleSystemRenderer:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5924960017829766801, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479397106699666234}
   m_Enabled: 1
@@ -16107,6 +16140,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
+    gravitySource: 0
     maxNumParticles: 20
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -19503,6 +19537,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minVertexDistance: 0.2
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
@@ -20461,8 +20496,8 @@ Transform:
 --- !u!1 &5932012586083226841
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3563465274063281749, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -20479,8 +20514,8 @@ GameObject:
 --- !u!4 &8491236982064361937
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1654978055996930909, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5932012586083226841}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -20494,8 +20529,8 @@ Transform:
 --- !u!198 &3818510668390714530
 ParticleSystem:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6331874113089406510, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5932012586083226841}
   serializedVersion: 8
@@ -20987,6 +21022,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
+    gravitySource: 0
     maxNumParticles: 12
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -24405,6 +24441,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minVertexDistance: 0.2
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
@@ -25164,8 +25201,8 @@ ParticleSystem:
 ParticleSystemRenderer:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1817911487029324727, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5932012586083226841}
   m_Enabled: 1
@@ -25929,6 +25966,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
+    gravitySource: 0
     maxNumParticles: 20
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -29325,6 +29363,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minVertexDistance: 0.2
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
@@ -30409,8 +30448,8 @@ Transform:
 --- !u!1 &6725055967987844488
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4500630981741448964, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -30427,8 +30466,8 @@ GameObject:
 --- !u!4 &7914070891189608864
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1077815267448711980, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6725055967987844488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -30442,8 +30481,8 @@ Transform:
 --- !u!198 &8692908170519955061
 ParticleSystem:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1982198606416219385, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6725055967987844488}
   serializedVersion: 8
@@ -30935,6 +30974,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
+    gravitySource: 0
     maxNumParticles: 15
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -34353,6 +34393,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minVertexDistance: 0.2
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
@@ -35112,8 +35153,8 @@ ParticleSystem:
 ParticleSystemRenderer:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4447620311155288456, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6725055967987844488}
   m_Enabled: 1
@@ -35408,8 +35449,8 @@ Transform:
 --- !u!1 &7833058993530548254
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1123044933889522322, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -35426,8 +35467,8 @@ GameObject:
 --- !u!4 &765961425599561044
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7602211506727106520, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7833058993530548254}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
@@ -35447,8 +35488,8 @@ Transform:
 --- !u!198 &8399942033283013002
 ParticleSystem:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1707937432368616198, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7833058993530548254}
   serializedVersion: 8
@@ -35904,6 +35945,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
+    gravitySource: 0
     maxNumParticles: 25
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -39322,6 +39364,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minVertexDistance: 0.2
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
@@ -40081,8 +40124,8 @@ ParticleSystem:
 ParticleSystemRenderer:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2583162996283837912, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7833058993530548254}
   m_Enabled: 1
@@ -40514,8 +40557,8 @@ Transform:
 --- !u!1 &8631672169123226237
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1506624323621710065, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -40532,8 +40575,8 @@ GameObject:
 --- !u!4 &735665857839520314
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7571917661205958838, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8631672169123226237}
   m_LocalRotation: {x: -1, y: 0, z: 0, w: 0}
@@ -40547,8 +40590,8 @@ Transform:
 --- !u!198 &646399661583079097
 ParticleSystem:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7771312849129823285, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8631672169123226237}
   serializedVersion: 8
@@ -41040,6 +41083,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
+    gravitySource: 0
     maxNumParticles: 70
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -44458,6 +44502,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minVertexDistance: 0.2
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
@@ -45217,8 +45262,8 @@ ParticleSystem:
 ParticleSystemRenderer:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 487523667953560444, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+  m_PrefabInstance: {fileID: 7143068334317652620}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8631672169123226237}
   m_Enabled: 1
@@ -45384,3 +45429,62 @@ Transform:
   m_Father: {fileID: 4424016218432135739}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &7143068334317652620
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 3661523468421947520}
+    m_Modifications:
+    - target: {fileID: 1123044933889522322, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+      propertyPath: m_Name
+      value: Poof
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602211506727106520, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602211506727106520, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602211506727106520, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602211506727106520, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602211506727106520, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602211506727106520, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602211506727106520, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602211506727106520, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602211506727106520, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602211506727106520, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602211506727106520, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf4ba82495e40f84088292b28d9322d2, type: 3}
