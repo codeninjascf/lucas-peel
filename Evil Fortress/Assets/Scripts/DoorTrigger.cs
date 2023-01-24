@@ -7,6 +7,7 @@ public class DoorTrigger : MonoBehaviour
     public DoorSwitch[] switches;
     private bool _opened;
     private Animator _animator;
+    private AudioSource _audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +30,7 @@ public class DoorTrigger : MonoBehaviour
             if (switchesEnabled)
             {
                 _animator.SetBool("DoorActivate", true);
-                _opened = true;
+                _opened = true;_audioSource.Play();
             }
         }
     }
