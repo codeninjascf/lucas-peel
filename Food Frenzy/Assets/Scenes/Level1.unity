@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: {fileID: 1782948603}
-  gridManager: {fileID: 0}
+  gridManager: {fileID: 1037137524}
 --- !u!4 &993841475
 Transform:
   m_ObjectHideFlags: 0
@@ -262,6 +262,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1037137523}
+  - component: {fileID: 1037137525}
+  - component: {fileID: 1037137524}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -284,6 +286,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1037137524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037137521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f7c7d8b73fd5a4d8650ca62f0c2c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  grid: {fileID: 0}
+  pieceBackground: {fileID: 0}
+  piecePrefab: {fileID: 0}
+  normalPieceSprites: []
+  preFillGrid: 1
+--- !u!114 &1037137525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037137521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff0bb158e4d046e5adc58cfe1668907b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 0}
+  width: 0
+  height: 0
+  fillTime: 0.1
 --- !u!1001 &1648227042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -431,8 +467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ffe314fd59ffff448ca6462538dfd3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
-  levelCondition: 0
+  type: 1
+  levelCondition: 5
   firstStar: 0
   secondStar: 0
   thirdStar: 0

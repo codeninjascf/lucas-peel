@@ -27,15 +27,17 @@ public class Level : MonoBehaviour
     // Start is called before the first frame update
     
     
-     public int StarsAchieved(int score) => Convert.ToInt32(score >= firstStar) + Convert.ToInt32(score >= secondStar) + Convert.ToInt32(score >= thirdStar);
-     public void UpdateHighScore(int score) => PlayerPrefs.SetInt(_levelName + "_HighScore", Math.Max(score, HighScore));
-     public void UpdateStarsAchieved(int score) => PlayerPrefs.SetInt(_levelName + "_Stars", StarsAchieved(score));
-     
-    void Update()
-    {
-        TimeRemaining -= Time.deltaTime;
-    }
+     public int StarsAchieved(int score) => Convert.ToInt32(score >= firstStar) + 
+        Convert.ToInt32(score >= secondStar) + Convert.ToInt32(score >= thirdStar);
 
+     public void UpdateHighScore(int score) => PlayerPrefs.SetInt(_levelName + 
+         "_HighScore", Math.Max(score, HighScore));
+
+     public void UpdateStarsAchieved(int score) => PlayerPrefs.SetInt(_levelName + 
+         "_Stars", StarsAchieved(score));
+
+
+     
     void Awake()
     {
         _levelName = SceneManager.GetActiveScene().name;
@@ -45,4 +47,11 @@ public class Level : MonoBehaviour
 
         HighScore = PlayerPrefs.GetInt(_levelName + "_HighScore", 0);
     }
+
+    void Update()
+    {
+        TimeRemaining -= Time.deltaTime;
+    }
+
+    
 }
