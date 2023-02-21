@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 3
+    serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    buildHeightMesh: 0
+    accuratePlacement: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -163,17 +163,9 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -246,6 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: {fileID: 1782948603}
   gridManager: {fileID: 1037137524}
+  uiManager: {fileID: 0}
 --- !u!4 &993841475
 Transform:
   m_ObjectHideFlags: 0
@@ -333,7 +326,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1971154058007659796, guid: 1474bdb09b63eed48afca7e647e1d600, type: 3}
@@ -385,16 +377,12 @@ PrefabInstance:
       value: AudioManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1474bdb09b63eed48afca7e647e1d600, type: 3}
 --- !u!1001 &1704564829
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7339895794586610243, guid: 9e5e8e312661f0a4fa3f247d4aaf85bd, type: 3}
@@ -446,9 +434,6 @@ PrefabInstance:
       value: Background
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e5e8e312661f0a4fa3f247d4aaf85bd, type: 3}
 --- !u!1 &1782948602
 GameObject:
@@ -479,11 +464,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ffe314fd59ffff448ca6462538dfd3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 1
-  levelCondition: 5
-  firstStar: 0
-  secondStar: 0
-  thirdStar: 0
+  type: 0
+  levelCondition: 90
+  firstStar: 60000
+  secondStar: 90000
+  thirdStar: 120000
 --- !u!4 &1782948604
 Transform:
   m_ObjectHideFlags: 0
@@ -504,7 +489,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5006177842123420065, guid: 354e069b52a5fc948b4e2cb8e613882d, type: 3}
@@ -556,7 +540,4 @@ PrefabInstance:
       value: LevelUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 354e069b52a5fc948b4e2cb8e613882d, type: 3}
