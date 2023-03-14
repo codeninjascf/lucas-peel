@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public enum LevelType
 {
     Time,
     Moves
 }
+
 public class Level : MonoBehaviour
 {
     public LevelType type;
@@ -23,21 +25,17 @@ public class Level : MonoBehaviour
     public double TimeRemaining { get; set; }
     public int HighScore { get; set; }
 
-    public bool GameOver => type == LevelType.Moves && MovesRemaining <= 0 || type == LevelType.Time && TimeRemaining <= 0;
-    // Start is called before the first frame update
+    public bool GameOver => type == LevelType.Moves && MovesRemaining <= 0 || 
+                            type == LevelType.Time && TimeRemaining <= 0;
+
+    public int StarsAchieved(int score) => Convert.ToInt32(score >= firstStar) + 
+                                           Convert.ToInt32(score >= secondStar) +
+                                           Convert.ToInt32(score >= thirdStar);
+
+    public void UpdateHighScore(int score) => PlayerPrefs.SetInt(_levelName + "_HighScore", Math.Max(score, HighScore));
     
-    
-     public int StarsAchieved(int score) => Convert.ToInt32(score >= firstStar) + 
-        Convert.ToInt32(score >= secondStar) + Convert.ToInt32(score >= thirdStar);
+    public void UpdateStarsAchieved(int score) => PlayerPrefs.SetInt(_levelName + "_Stars", StarsAchieved(score));
 
-     public void UpdateHighScore(int score) => PlayerPrefs.SetInt(_levelName + 
-         "_HighScore", Math.Max(score, HighScore));
-
-     public void UpdateStarsAchieved(int score) => PlayerPrefs.SetInt(_levelName + 
-         "_Stars", StarsAchieved(score));
-
-
-     
     void Awake()
     {
         _levelName = SceneManager.GetActiveScene().name;
@@ -48,10 +46,9 @@ public class Level : MonoBehaviour
         HighScore = PlayerPrefs.GetInt(_levelName + "_HighScore", 0);
     }
 
+
     void Update()
     {
         TimeRemaining -= Time.deltaTime;
     }
-
-    
 }
