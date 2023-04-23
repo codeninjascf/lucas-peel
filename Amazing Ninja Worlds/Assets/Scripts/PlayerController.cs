@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public GameManager gameManager;
     public float moveSpeed=5f;
     public float jumpForce=10f;
-    public float groundDistanceThreshold=0.55f;
+    public float groundDistanceThreshold=100f;
     public LayerMask whatIsGround;
     private bool _isGrounded;
     private Rigidbody2D _rigidbody;
