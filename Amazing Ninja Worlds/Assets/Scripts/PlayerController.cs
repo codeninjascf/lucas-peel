@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _rigidbody=GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
         _enabled = true;
     }
 
@@ -32,25 +33,42 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (!_enabled) return;
-        _isGrounded=Physics2D.Raycast(transform.position, Vector2.down, groundDistanceThreshold, whatIsGround);
-        if(_isGrounded&&Input.GetButtonDown("Jump"))
+        _isGrounded = Physics2D.Raycast(transform.position, Vector2.down, groundDistanceThreshold, whatIsGround);
+        if (_isGrounded && Input.GetButtonDown("Jump"))
         {
             _animator.SetBool("Jumping", true);
-            _rigidbody.velocity=Vector2.up*jumpForce;
+            _rigidbody.velocity = Vector2.up * jumpForce;
         }
         else
         {
             _animator.SetBool("Jumping", false);
         }
-        _animator.SetBool("Falling", !_isGrounded);
+        else
+        {
+            _animator.SetBool("Falling", !_isGrounded);
+        }
+        else
+        {
+
+            _animator.SetBool("Moving", movement != 0);
+            if (movement > 0)
+            {
+                transform.localScale = new Vector3.one;
+            }
+            else if (movement < 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+            _rigidbody.position += movement * Time.deltaTime * Vector2.right;
+
+
+        }
+
+
     }
     public void Enable()
     {
         _enabled = true;
-    }
-    public void Disable()
-    {
-        _enabled = false;
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
