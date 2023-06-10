@@ -27,6 +27,16 @@ public class PlayerController : MonoBehaviour
         float movement=moveSpeed*Input.GetAxisRaw("Horizontal");
         _animator.SetBool("Moving", movement != 0);
         _rigidbody.position+=movement*Time.deltaTime*Vector2.right;
+        _animator.SetBool("Moving", movement != 0);
+            if (movement > 0)
+            {
+                transform.localScale = Vector3.one;
+            }
+            else if (movement < 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+            _rigidbody.position += movement * Time.deltaTime * Vector2.right;
 
     }
     // Update is called once per frame
@@ -43,28 +53,8 @@ public class PlayerController : MonoBehaviour
         {
             _animator.SetBool("Jumping", false);
         }
-        else
-        {
             _animator.SetBool("Falling", !_isGrounded);
-        }
-        else
-        {
-
-            _animator.SetBool("Moving", movement != 0);
-            if (movement > 0)
-            {
-                transform.localScale = new Vector3.one;
-            }
-            else if (movement < 0)
-            {
-                transform.localScale = new Vector3(-1, 1, 1);
-            }
-            _rigidbody.position += movement * Time.deltaTime * Vector2.right;
-
-
-        }
-
-
+            
     }
     public void Enable()
     {
@@ -88,6 +78,7 @@ public class PlayerController : MonoBehaviour
             gameManager.GotCollectible(other.transform);
             other.gameObject.SetActive(false);
         }
+        
     }
     public void Disable()
     {
