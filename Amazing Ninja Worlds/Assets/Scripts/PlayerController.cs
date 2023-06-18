@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour
     {
         if(other.CompareTag("Checkpoint"))
         {
+            other.GetComponent<Animator>().SetBool("Active", true);
             gameManager.SetCheckpoint(other.transform);
         }
         else if(other.CompareTag("Collectible"))
