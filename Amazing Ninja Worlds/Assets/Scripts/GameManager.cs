@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     private int _currentCheckpoint;
     public Transform[] collectibles;
     private bool[] _collectiblesCollected;
+    public GameObject deathParticles;
     void Start()
     {
         _currentCheckpoint = 0;
@@ -27,6 +28,10 @@ public class GameManager : MonoBehaviour
     {
         player.Disable();
         player.gameObject.SetActive(false);
+        GameObject particles = Instantiate(deathParticles, new
+            Vector3(player.transform.position.x, player.transform.position.y),
+            Quaternion.identity);
+        Destroy(particles, 1f);
         StartCoroutine(ResetPlayer());
     }
     IEnumerator ResetPlayer()
