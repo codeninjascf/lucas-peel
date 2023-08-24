@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class GameManager : MonoBehaviour
 {
+    public int levelNumber;
     // Start is called before the first frame update
     public float respawnDelay = 1.5f;
     public PlayerController player;
@@ -13,10 +14,14 @@ public class GameManager : MonoBehaviour
     public Transform[] collectibles;
     private bool[] _collectiblesCollected;
     public GameObject deathParticles;
+    public GameObject levelCompleteMenu;
+    public RubiesDisplay rubiesDisplay;
     void Start()
     {
         _currentCheckpoint = 0;
         _collectiblesCollected = new bool[3];
+        levelCompleteMenu.SetActive(false);
+        rubiesDisplay.levelNumber=levelNumber;
     }
 
     // Update is called once per frame
@@ -56,5 +61,20 @@ public class GameManager : MonoBehaviour
     {
         int collectibleNumber = Array.IndexOf(collectibles, collectible);
         _collectiblesCollected[collectibleNumber] = true;
+    }
+    public void ReachedGoal()
+    {
+        player.Disable();
+        PlayerPrefs.SetInt("Level"+levelNumber+"_Complete",1);
+        for(int i=0;i<3;i++)
+        {
+            if(_collectiblesCollected[i])
+            {
+                PlayerPrefs.SetInt("Level"+levelNumber+"_Gem"+
+                        (i+1),1);
+            }
+        }
+    levelCompleteMenu.SetActive(true);
+    rubiesDisplay.UpdateRubies();
     }
 }

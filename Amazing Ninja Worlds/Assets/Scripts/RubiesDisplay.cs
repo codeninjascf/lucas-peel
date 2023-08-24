@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class RubiesDisplay : MonoBehaviour
 {
+    public int levelNumber;
+    public GameObject[] rubies;
     // Start is called before the first frame update
     void Start()
     {
-        public int levelNumber;
-        public GameObject[] rubies;
-    UpdateRubies();
+        UpdateRubies();
     }
 
     // Update is called once per frame
@@ -19,10 +19,10 @@ public class RubiesDisplay : MonoBehaviour
     }
 public void UpdateRubies()
 {
-    GameObject.SetActive(PlayerPrefs.GetInt("Level" + levelNumber + "_Complete") != 0);
-    for(int=0;int<3;int++)
+    gameObject.SetActive(PlayerPrefs.GetInt("Level" + levelNumber + "_Complete") != 0);
+    for(int i =0; i < 3; i++)
     {
-        RubiesDisplay[i].SetActive(PlayerPrefs.GetInt("Level" + levelNumber"_Gem" + (int + 1), 0) == 1);
+        rubies[i].SetActive(PlayerPrefs.GetInt("Level"+levelNumber+"_Gem"+(i+1),0)==1);
     }
 }
 }
