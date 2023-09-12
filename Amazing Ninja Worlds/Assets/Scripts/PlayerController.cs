@@ -79,6 +79,10 @@ public class PlayerController : MonoBehaviour
             gameManager.GotCollectible(other.transform);
             other.gameObject.SetActive(false);
         }
+        else if (other.CompareTag("Goal"))
+        {
+            gameManager.ReachedGoal();
+        }
         
     }
     public void Disable()
