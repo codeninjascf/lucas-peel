@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public int levelNumber;
@@ -16,6 +17,8 @@ public class GameManager : MonoBehaviour
     public GameObject deathParticles;
     public GameObject levelCompleteMenu;
     public RubiesDisplay rubiesDisplay;
+    public string menuSceneName;
+    public string nextLevelName;
     void Start()
     {
         _currentCheckpoint = 0;
@@ -75,6 +78,15 @@ public class GameManager : MonoBehaviour
             }
         }
     levelCompleteMenu.SetActive(true);
+    levelCompleteMenu.GetComponent<Animator>().SetTrigger("Activate");
     rubiesDisplay.UpdateRubies();
+    }
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene(menuSceneName);
+    }
+    public void LoadNextLevel()
+    {
+        SceneManager.LoadScene(nextLevelName);
     }
 }

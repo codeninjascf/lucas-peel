@@ -1037,7 +1037,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 243427727}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 948291005}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadNextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &243427727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1159,7 +1171,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 325796594}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 948291005}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &325796594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2028,6 +2052,8 @@ MonoBehaviour:
   deathParticles: {fileID: 1317886603597594358, guid: ffe505731aa283043b36d4e739aa1c1f, type: 3}
   levelCompleteMenu: {fileID: 1159678463}
   rubiesDisplay: {fileID: 680850658423250920}
+  menuSceneName: Menu
+  nextLevelName: Level2
 --- !u!1 &992265505
 GameObject:
   m_ObjectHideFlags: 0
