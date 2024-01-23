@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
     public float groundDistanceThreshold=100f;
     public LayerMask whatIsGround;
     private bool _isGrounded;
+    public float spriteHeight = 1.78f;
+    public LayerMask whatIsGround;
+    private bool _gravityFlipped;
     private Rigidbody2D _rigidbody;
     private bool _enabled;
     private Animator _animator;
@@ -19,6 +22,22 @@ public class PlayerController : MonoBehaviour
         _rigidbody=GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         _enabled = true;
+        GravityFlipped = false;
+        _enabled = true;
+    }
+    public bool GravityFlipped
+    {
+        get => _gravityFlipped;
+        set
+        {
+            _gravityFlipped = value;
+            int multiplier -value ? -1 : 1;
+            _rigidbody.gravityScale = multiplier * MathF.Abs(_rigidbody.gravityScale);
+            jumpForce = multiplier * MathF.Abs(jumpForce);
+            Transform body = transform.GetChild(0);
+            body.localScale = new Vector3(1, multiplier, 1);
+
+        }
     }
 
     private void FixedUpdate()
@@ -28,6 +47,8 @@ public class PlayerController : MonoBehaviour
         _animator.SetBool("Moving", movement != 0);
         _rigidbody.position+=movement*Time.deltaTime*Vector2.right;
         _animator.SetBool("Moving", movement != 0);
+        _isGrounded = !GravityFlipped ?
+            Physics2D.Raycast(transform.position, Vector2.down, groundDistanceThreshold, whatIsGround) : Physics2D.Raycast(transform.position, Vector2.up, groundDistanceThreshold + spriteHeight, whatIsGround);
             if (movement > 0)
             {
                 transform.localScale = Vector3.one;
@@ -82,6 +103,14 @@ public class PlayerController : MonoBehaviour
         else if (other.CompareTag("Goal"))
         {
             gameManager.ReachedGoal();
+        }
+        else if (other.CompareTag("FlipGravity")&& !GravityFlipped)
+        {
+            GravityFlipped = true;
+        }
+        else if (other.CompareTag("RevertGravity")&& _gravityFlipped)
+        {
+            GravityFlipped = false;
         }
         
     }

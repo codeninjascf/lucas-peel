@@ -8,6 +8,8 @@ TagManager:
   - Checkpoint
   - Hazard
   - Goal
+  - FlipGravity
+  - RevertGravity
   layers:
   - Default
   - TransparentFX
