@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
     private bool _isGrounded;
     public float spriteHeight = 1.78f;
-    public LayerMask whatIsGround;
     private bool _gravityFlipped;
     private Rigidbody2D _rigidbody;
     private bool _enabled;
@@ -31,9 +30,9 @@ public class PlayerController : MonoBehaviour
         set
         {
             _gravityFlipped = value;
-            int multiplier -value ? -1 : 1;
-            _rigidbody.gravityScale = multiplier * MathF.Abs(_rigidbody.gravityScale);
-            jumpForce = multiplier * MathF.Abs(jumpForce);
+            int multiplier =value ? -1 : 1;
+            _rigidbody.gravityScale = multiplier * Mathf.Abs(_rigidbody.gravityScale);
+            jumpForce = multiplier * Mathf.Abs(jumpForce);
             Transform body = transform.GetChild(0);
             body.localScale = new Vector3(1, multiplier, 1);
 
