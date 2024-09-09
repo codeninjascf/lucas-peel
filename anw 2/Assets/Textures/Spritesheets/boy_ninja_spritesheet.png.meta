@@ -3,7 +3,7 @@ guid: 5b11b6f5fdedd8e4eb990a9318b4a4f6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -42,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,11 +77,655 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 966
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0ed1ac8139a9245ad0e2de09f7ba60
+      internalID: 947154088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 966
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f19afcd3f5e1c249b7a6ec88a95fee1
+      internalID: 1134084868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 966
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f8d6a2b0d8ced419857fac9bd4a175
+      internalID: 683810493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 966
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c5fbd0a5ba4804eb3c8f91024edbbc
+      internalID: 353686772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 966
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9acbdbdd23abb5469003394371dec87
+      internalID: 2030578770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 966
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01d861bd80b9ba4fb07d835d2e5f276
+      internalID: -227003828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 966
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a374b1b7391b5b42b535a41702de610
+      internalID: -1866632175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 2541
+        y: 966
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8350233177f370a41b2a7baf4b142a62
+      internalID: -2064206050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 966
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac74f816c1bf574dbb40b69c7d1bd81
+      internalID: 2076535231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 3267
+        y: 966
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12738ea72dece244b9ecb6bbec90174
+      internalID: -1223347922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 483
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e226c9d6316ecf44be9f8e506f3ef01
+      internalID: -1155476877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 483
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b4f59a48ae3254783dfcf6f4c95887
+      internalID: -212192258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 483
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b06084df9cab3d4eb1f3bc4c1a86812
+      internalID: 1164596093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 483
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44cb187c9cce5d84387cd66e2a67a599
+      internalID: 1207812464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 483
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b59b9f409e471e4e9b0163c9f583be4
+      internalID: -968649845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 483
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91274ae8543b6344bbadd06baf998f04
+      internalID: -657227899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 483
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0af30bb302faa349bdbe569bc853590
+      internalID: -1306179089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 2541
+        y: 483
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0920bf08f9b1f694eaebde0a4899efd7
+      internalID: 628577485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 483
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38de9a0064716543b224a627c48c2b1
+      internalID: 1986390503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 3267
+        y: 483
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a7e4d69b347be4980814e97279630c
+      internalID: 1095379940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ef82915a347904f8d47d156e68fec1
+      internalID: -1509721415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 0
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73a012dd3360c64f8c28d70b53c7d21
+      internalID: 64329227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 0
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad8fc0e4e0d1b24194c31a85ea3db4e
+      internalID: 2140818353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 0
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a354c381b6713834d9b4a8faec045220
+      internalID: -1834416330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 0
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9a649adc0095247bda1fb7683d16be
+      internalID: -333254023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 0
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb3862303fed0c45a6680bb4f0ae2b0
+      internalID: 2104980845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 0
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcf6fd74ed2a57439e6233db02277bb
+      internalID: 1829821713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 2541
+        y: 0
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b62cab5ff0509448e2a44045fe97c1
+      internalID: 1560138868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 0
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa91b417a8b851c4c945d970360c49b1
+      internalID: 782385110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boy_ninja_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 3267
+        y: 0
+        width: 363
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d9afe087435e14289134f808066c31
+      internalID: 246428989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,10 +736,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
-  spritePackingTag: 
+    nameFileIdTable:
+      boy_ninja_spritesheet_0: 947154088
+      boy_ninja_spritesheet_1: 1134084868
+      boy_ninja_spritesheet_10: -1155476877
+      boy_ninja_spritesheet_11: -212192258
+      boy_ninja_spritesheet_12: 1164596093
+      boy_ninja_spritesheet_13: 1207812464
+      boy_ninja_spritesheet_14: -968649845
+      boy_ninja_spritesheet_15: -657227899
+      boy_ninja_spritesheet_16: -1306179089
+      boy_ninja_spritesheet_17: 628577485
+      boy_ninja_spritesheet_18: 1986390503
+      boy_ninja_spritesheet_19: 1095379940
+      boy_ninja_spritesheet_2: 683810493
+      boy_ninja_spritesheet_20: -1509721415
+      boy_ninja_spritesheet_21: 64329227
+      boy_ninja_spritesheet_22: 2140818353
+      boy_ninja_spritesheet_23: -1834416330
+      boy_ninja_spritesheet_24: -333254023
+      boy_ninja_spritesheet_25: 2104980845
+      boy_ninja_spritesheet_26: 1829821713
+      boy_ninja_spritesheet_27: 1560138868
+      boy_ninja_spritesheet_28: 782385110
+      boy_ninja_spritesheet_29: 246428989
+      boy_ninja_spritesheet_3: 353686772
+      boy_ninja_spritesheet_4: 2030578770
+      boy_ninja_spritesheet_5: -227003828
+      boy_ninja_spritesheet_6: -1866632175
+      boy_ninja_spritesheet_7: -2064206050
+      boy_ninja_spritesheet_8: 2076535231
+      boy_ninja_spritesheet_9: -1223347922
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
