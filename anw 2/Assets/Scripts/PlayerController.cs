@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
             _rigidbody.gravityScale = multiplier * Mathf.Abs(_rigidbody.gravityScale);
             jumpForce = multiplier * Mathf.Abs(jumpForce);
             Transform body = transform.GetChild(0);
-            body.localScale = new Vector3(1, multiplier, 1);
+            body.localScale = new Vector3(0.35f, value ? -0.35f : 0.35f, 1);
 
         }
     }
@@ -43,7 +43,6 @@ public class PlayerController : MonoBehaviour
     {
         if (!_enabled) return;
         float movement=moveSpeed*Input.GetAxisRaw("Horizontal");
-        _animator.SetBool("Moving", movement != 0);
         _rigidbody.position+=movement*Time.deltaTime*Vector2.right;
         _animator.SetBool("Moving", movement != 0);
         _isGrounded = !GravityFlipped ?
